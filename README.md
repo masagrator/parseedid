@@ -5,7 +5,7 @@ Was designed only to retrieve highest progressive refresh rate, but you can modi
 
 Compile with DEBUG flag for verbose output.
 
-Example how to compile:
+Example how to compile for Windows from linux:
 ```
-g++ -O3 -static -DDEBUG parseedid.cpp -o parseedid
+x86_64-w64-mingw32-g++ -O3 -static -DDEBUG parseedid.cpp -o parseedid
 ```
