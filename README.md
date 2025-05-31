@@ -9,3 +9,8 @@ Example how to compile for Windows from linux:
 ```
 x86_64-w64-mingw32-g++ -O3 -static -DDEBUG parseedid.cpp -o parseedid
 ```
+
+How to use:
+```
+parseedid edid_dump.dat
+```
