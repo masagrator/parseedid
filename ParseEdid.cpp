@@ -5,7 +5,6 @@
 #include <cassert>
 #include <stdlib.h>
 #include <cstddef>
-#include <vector>
 
 #include "parse-cta-block.hpp"
 
@@ -181,8 +180,6 @@ struct DisplayData {
 	uint16_t heightBackPorch;
 };
 
-std::vector<DisplayData> EdidData;
-
 float parseEdid(unsigned char* edid) {
 	float highestRefreshRate = 60;
 	uint8_t magic[8] = {0, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0};
@@ -320,6 +317,5 @@ int main(int argc, char **argv) {
 	float highestRefreshRate = parseEdid(edid);
 	free(edid);
 	printf("\nDetected highest progressive refresh rate: %0.4f Hz\n\n", highestRefreshRate);
-	EdidData.clear();
 	return 0;
 }
