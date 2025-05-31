@@ -167,19 +167,6 @@ typedef struct {
 	uint8_t aspect_ratio : 2;                ///< 0 = 16:10, 1 = 4:3, 2 = 5:4, 3 = 16:9.
 } timing_info;
 
-struct DisplayData {
-	uint32_t pixelClockkHz;
-	uint16_t width;
-	uint16_t height;
-	float refreshRate;
-	uint16_t widthFrontPorch;
-	uint16_t heightFrontPorch;
-	uint16_t widthSync;
-	uint16_t heightSync;
-	uint16_t widthBackPorch;
-	uint16_t heightBackPorch;
-};
-
 float parseEdid(unsigned char* edid) {
 	float highestRefreshRate = 60;
 	uint8_t magic[8] = {0, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0};
