@@ -1,7 +1,7 @@
 # parseedid
 Simple code for parsing EDID with CEA-861 extension. Ignores existence of other extension blocks.
 
-Was designed only to retrieve highest progressive refresh rate, but you can modify source code to retrieve more informations.
+Was designed to retrieve highest progressive refresh rate, but you can modify source code to retrieve more informations.
 
 Compile with DEBUG flag for verbose output.
 
